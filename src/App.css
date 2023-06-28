@@ -6,11 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-.nav-links {
-display:flex;
-flex-direction:row;
-justify-content:space-around;
-list-style:none;
+
+.logo-container :is(img) {
+  width:70px;
+}
+
+.nav-bar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
 @media (prefers-reduced-motion: no-preference) {
