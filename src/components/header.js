@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.png';
 
 export default function Header() {
 
@@ -9,10 +9,10 @@ export default function Header() {
       <div class="nav-bar">
         <div class="logo-container">
           <NavLink to="/">
-            <img src={logo}  alt="KewlLogo" />
+            <img src={logo} alt="KewlLogo" />
           </NavLink>
         </div>
-        <div>
+        <div class="nav-links">
           <NavLink to="/about" style={({ isActive }) =>
             isActive ? {textDecoration: "underline", "paddingRight": "1em", color: "black"} : { textDecoration: "none", "paddingRight": "1em", color: "black" }}>
             About
